@@ -1,0 +1,54 @@
+Style A Button with Tailwind CSS
+Intructions:
+
+Create a button using a <button> tag with bg-blue-500.
+
+Add classes to style the button with padding, background color, rounded corners, and a hover effect that changes its color to bg-blue-700.
+
+Add the Tailwind CSS CDN in head tag:
+
+<head><link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"></head>
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"
+        </head>
+    <button class="bg-blue-500 font-bold py-2 px-4 rounded hover:bg-blue-700">hello</button>
+<!--Add your HTML code here-->
+</html>
+
+
+
+Center a Div Using Flexbox
+Instructions:
+
+Create a div (parent container) and give it the id="parent". This div should contain another div (child container) with id="child".
+
+Use Tailwind CSS's flexbox utilities to center the child div inside the parent both vertically and horizontally within the viewport.
+
+The content inside the child div should consist of:
+
+A heading (<h1>) with the class text-2xl.
+
+A paragraph (<p>) explaining that the div is centered.
+
+Add the following Tailwind CSS CDN link to the <head> section:
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+Ensure that both the parent and child divs have the specified id attributes for the tests to pass.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>   
+    <div id="parent" class="flex items-center justify-center h-screen bg-gray-200">
+        <div id="child" class="bg-white p-10 rounded-lg shadow-lg text-center">
+            <h1 class="text-2xl">hello there</h1>
+            <p>see you there</p>
+        </div>
+    </div>
+</body>
+</html>
